@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+</head>
+<body>
+    
+
+
+<h2>JavaScript and JQuery</h2>
+
+
+<p class="foo"> This is a foo p tag</p>
+<p class="foo"> This is one more foo p tag</p>
+
+<span class="bar"> This is span tag</span>
+
+<div class="bill"> This is a div tag</div>
+
+<br>
+<!-- //=================================================== -->
+
+<div id="div1"> div 1</div>
+
+<div id="div2"> div 2</div>
+<br>
+<!-- ================================================== -->
+
+
+<div id="div3"> Div 3</div>
+<br>
+
+<div id="div4"> Div 4</div>
+<br>
+
+
+<!-- ===================================================== -->
+
+<p1> Gooooddd </p1>
+<br>
+
+<!-- ================================== -->
+
+<div5>
+    <label> This is a div.</label>
+</div5>
+
+<br>
+
+<!-- ====================================================== -->
+
+<div6>
+    <label1> This is label</label1>
+</div6>
+
+<script src="../jquery-3.6.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+    
+    $(".foo").css("background-color", "yellow");
+});
+</script>
+
+<!-- ============================= -->
+
+<script>
+    $(document).ready(function () {
+
+        $('#div1').after('<div style="background-color:green"> NEW DIV </div>');
+    });
+</script>
+
+<!-- ================================================== -->
+
+<script>
+    $(document).ready(function () {
+
+        $('#div3').before('<div style="background-color:lightgreen"> NEW DIV </div>')
+    })
+</script>
+
+<!-- ==================================================== -->
+
+<script>
+    $(document).ready(function() {
+
+        $('p1').append('Morniinnnnnng');
+    });
+</script>
+
+<!-- ==================================================== -->
+
+
+<script>
+    $(document).ready(function() {
+
+        $('div5').prepend('<p> This is a prepended paragraph </p>')
+    })
+</script>
+
+
+<!-- ======================================================= -->
+
+<script>
+    $(document).ready(function(){
+        $('div6').remove();
+    })
+</script>
+
+</body>
+</html>

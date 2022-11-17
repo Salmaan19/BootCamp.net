@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+<body>
+    
+<h2> JavsScript And jQuery</h2>
+
+<div id="msgDiv"></div>
+
+<div id="myDiv" class="redDiv"></div>
+
+
+
+
+<style>
+    .redDiv {
+        background-color: red;
+        width: 100px;
+        height: 100px;
+
+
+    }
+</style>
+
+</body>
+<script>
+
+// animate function using its all three properties
+// style property name
+// duration
+// easing
+// callback
+
+//===================================================
+
+//     $('#myDiv').animate({
+    
+//     height: '200px',
+//     width: '200px'
+// },
+// 5000,
+
+// function ()
+//  {
+//     $('#msgDiv').append("Animation Completed");
+    
+// }
+
+// );
+
+
+//===================================================== specific animation options
+
+$(document).ready(function () {
+
+    $('#myDiv').animate({
+
+        height: '200px',
+        width: '200px'
+    },
+    
+    // options parameters
+
+    {
+        duration:5000,
+        complete: function () {
+
+            $(this).animate({
+                height: '100px',
+                width: '100px'
+
+            }, 5000,
+
+            function () {
+                $('#msgDiv').text("Animation Completed...");
+                
+            });
+
+            },
+
+            start: function () {
+               $('#msgDiv').append("Starting Animation...!"); 
+                
+            }
+    }
+    
+    )
+
+})
+ 
+
+
+
+
+
+
+
+
+</script>
+</html>

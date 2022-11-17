@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    
+<h1>Task 1</h1>
+
+<p>Taking input from user</p>
+
+<h2> Number 1</h2>
+<input type="number" placeholder="Enter number" id="inp1">
+
+<h2>Number 2</h2>
+<input type="number " placeholder="Enter number" id="inp2">
+<br>
+<br>
+
+<button onclick="sum()"> Add</button>  <button onclick="subtract()">Subtract</button> <button onclick="multiply()"> Multiply</button> 
+<button onclick="divide()">Divide</button>
+
+<p>Results </p>
+<p id="result"></p>
+
+
+
+</body>
+
+
+<script>
+function sum() {
+
+    let inp1 = document.getElementById("inp1");
+    let inp2 = document.getElementById("inp2");
+     
+    let inp1value = inp1.value;
+    let inp2value = inp2.value;
+    
+    inp1value = parseInt(inp1value);
+    inp2value = parseInt(inp2value);
+
+
+    let result = document.getElementById("result")
+    result.innerHTML = inp1value + inp2value //20
+
+    //console.log(inp1value + inp2value);
+
+}
+
+function subtract() {
+
+    let inp1 = document.getElementById("inp1");
+    let inp2 = document.getElementById("inp2");
+     
+    let inp1value = inp1.value;
+    let inp2value = inp2.value;
+    
+    inp1value = parseInt(inp1value);
+    inp2value = parseInt(inp2value);
+
+
+   console.log(inp1value - inp2value);
+
+}
+
+function multiply() {
+
+    let inp1 = document.getElementById("inp1");
+    let inp2 = document.getElementById("inp2");
+     
+    let inp1value = inp1.value;
+    let inp2value = inp2.value;
+    
+    inp1value = parseInt(inp1value);
+    inp2value = parseInt(inp2value);
+
+
+   console.log(inp1value * inp2value);
+
+}
+
+function divide() {
+
+    let inp1 = document.getElementById("inp1");
+    let inp2 = document.getElementById("inp2");
+     
+    let inp1value = inp1.value;
+    let inp2value = inp2.value;
+    
+    inp1value = parseInt(inp1value);
+    inp2value = parseInt(inp2value);
+
+
+   console.log(inp1value / inp2value);
+
+}
+
+
+</script>
+
+
+
+
+</html>
